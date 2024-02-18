@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>D-Ticket Service</title>
+    <!----------Google font link    ------>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Tailwind & DaisyUI links -->
 
     <link
@@ -14,8 +21,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- CSS links -->
     <link rel="stylesheet" href="style.css" />
+    <style>
+      .raleway-font {
+        font-family: "Raleway", "sans-serif";
+      }
+    </style>
   </head>
-  <body class="box-border my-0 mx-20">
+  <body class="mx-16   font-[.raleway-font]">
     <!-------------NavBar Section ---------->
     <header>
       <div class="navbar bg-base-100">
@@ -140,63 +152,485 @@
       </div>
       <!-----------Bus Information -->
 
-      <div>
-        <div class="text-center items-center">
+      <section>
+        <div class="bg-[#fff] border-solid rounded-3xl">
+          <div class="text-center items-center">
             <h2 class="text-4xl font-extrabold">D Paribahan</h2>
             <p>
-              Yes, you can run unit tests and view the results directly within the
-              app. The integrated testing features allow for a streamlined .
-            </p> </div>
-            <div class="flex justify-between mt-24 mb-36">
-              <div>
-                <div class="flex gap-64">
-                  <div class="flex items-center text-center gap-5">
-                    <div>
-                      <img src="images/bus-logo.png" alt="" />
-                    </div>
-                    <div>
-                      <p class="text-2xl font-extrabold">Greenline Paribahan</p>
-                      <p>Coach-009-WEB ! AC_Business</p>
-                    </div>
+              Yes, you can run unit tests and view the results directly within
+              the app. The integrated testing features allow for a streamlined .
+            </p>
+          </div>
+          <div class="flex justify-between mt-24 mb-36">
+            <div>
+              <div class="flex gap-64">
+                <div class="flex items-center text-center gap-5">
+                  <div>
+                    <img src="images/bus-logo.png" alt="" />
                   </div>
-                  <div class="flex items-center text-center text-[#1DD100]">
-                    <div>
-                      <img src="images/seat-green.png" alt="" />
-                    </div>
-                    <div>40 Seats left</div>
+                  <div>
+                    <p class="text-2xl font-extrabold">Greenline Paribahan</p>
+                    <p>Coach-009-WEB ! AC_Business</p>
                   </div>
                 </div>
-                <div class="gap-y-16">
-                  <div class="flex justify-between bg-[#F7F8F8] rounded-xl p-5">
-                    <p>Route</p>
-                    <p>Dhaka - Sylhet</p>
+                <div class="flex items-center text-center text-[#1DD100]">
+                  <div>
+                    <img src="images/seat-green.png" alt="" />
                   </div>
-                  <div class="flex justify-between bg-[#F7F8F8] rounded-xl p-5 mt-4">
-                    <p>Departure Time</p>
-                    <p>9:00 PM</p>
-                  </div>
-                  <div class="flex justify-between bg-[#F7F8F8] rounded-xl p-5 mt-4">
-                    <p>Boarding Point - Laxmipur</p>
-                    <p>Dropping Point - Bogura</p>
-                    <p>Est. Time - 11 Hour</p>
-                  </div>
+                  <div>40 Seats left</div>
                 </div>
               </div>
-    
-              
-    
+              <div class="gap-y-16">
+                <div class="flex justify-between bg-[#F7F8F8] rounded-xl p-5">
+                  <p>Route</p>
+                  <p>Dhaka - Sylhet</p>
+                </div>
+                <div
+                  class="flex justify-between bg-[#F7F8F8] rounded-xl p-5 mt-4"
+                >
+                  <p>Departure Time</p>
+                  <p>9:00 PM</p>
+                </div>
+                <div
+                  class="flex justify-between bg-[#F7F8F8] rounded-xl p-5 mt-4"
+                >
+                  <p>Boarding Point - Laxmipur</p>
+                  <p>Dropping Point - Bogura</p>
+                  <p>Est. Time - 11 Hour</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="">
+              <img class="ml-8" src="images/fare.png" alt="" />
+              <p class="">
+                <span class="text-3xl font-extrabold">550 Taka</span>
+                <br />
+                Per Seat
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!---------------Ticket Information ------------->
+      <section>
+        <div>
+          <h2>Select Your Seat</h2>
+          <hr />
+        </div>
+        <div class="flex justify-between mt-10">
+          <div>
+            <div class="flex gap-5">
               <div>
-                <img src="images/fare.png" alt="" />
-                <p>
-                  <span class="text-3xl font-extrabold">550 Taka</span>
-                  <br />
-                  Per Seat
-                </p>
+                <img src="images/seat-gray.png" alt="" />
+              </div>
+              <h2>Available</h2>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <div>
+              <img src="images/seat-green-filled.png" alt="" />
+            </div>
+            <h3>Selected</h3>
+          </div>
+        </div>
+        <div class="flex justify-end mt-10 mb-10">
+          <h2></h2>
+          <div class="bg-[#03071219] w-28 h-14 rounded-2xl pl-9 pt-3">
+            <img src="images/tabler-icon-steering-wheel.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!------------ seat plan ---------->
+      <section>
+        <div class="flex justify-between">
+          <div class="all-seats">
+            <div class="flex gap-6 mt-10 mb-10">
+              <div class="mt-3">
+                <h2>A</h2>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2"
+              >
+                <button id="A1">A1</button>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2"
+              >
+                <a id="A2" href="">A2</a>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2 ml-14"
+              >
+                <a id="A3" href="">A3</a>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2"
+              >
+                <a id="A4" href="">A4</a>
+              </div>
+            </div>
+            <div class="flex gap-6 mt-10 mb-10">
+              <div class="mt-3">
+                <h2>B</h2>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2"
+              >
+                <a href="">B1</a>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2"
+              >
+                <a href="">B2</a>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2 ml-14"
+              >
+                <a href="">B3</a>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2"
+              >
+                <a href="">B4</a>
+              </div>
+            </div>
+            <div class="flex gap-6 mt-10 mb-10">
+              <div class="mt-3">
+                <h2>C</h2>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2"
+              >
+                <a href="">C1</a>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2"
+              >
+                <a href="">C2</a>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2 ml-14"
+              >
+                <a href="">C3</a>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2"
+              >
+                <a href="">C4</a>
+              </div>
+            </div>
+            <div class="flex gap-6 mt-10 mb-10">
+              <div class="mt-3">
+                <h2>D</h2>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2"
+              >
+                <a href="">D1</a>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2"
+              >
+                <a href="">D2</a>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2 ml-14"
+              >
+                <a href="">D3</a>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2"
+              >
+                <a href="">D4</a>
+              </div>
+            </div>
+            <div class="flex gap-6 mt-10 mb-10">
+              <div class="mt-3">
+                <h2>E</h2>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2"
+              >
+                <a href="">E1</a>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2"
+              >
+                <a href="">E2</a>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2 ml-14"
+              >
+                <a href="">E3</a>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2"
+              >
+                <a href="">E4</a>
+              </div>
+            </div>
+            <div class="flex gap-6 mt-10 mb-10">
+              <div class="mt-3">
+                <h2>F</h2>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2"
+              >
+                <a href="">F1</a>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2"
+              >
+                <a href="">F2</a>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2 ml-14"
+              >
+                <a href="">F3</a>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2"
+              >
+                <a href="">F4</a>
+              </div>
+            </div>
+            <div class="flex gap-6 mt-10 mb-10">
+              <div class="mt-3">
+                <h2>G</h2>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2"
+              >
+                <a href="">G1</a>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2"
+              >
+                <a href="">G2</a>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2 ml-14"
+              >
+                <a href="">G3</a>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2"
+              >
+                <a href="">G4</a>
+              </div>
+            </div>
+            <div class="flex gap-6 mt-10 mb-10">
+              <div class="mt-3">
+                <h2>H</h2>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2"
+              >
+                <a href="">H1</a>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2"
+              >
+                <a href="">H2</a>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2 ml-14"
+              >
+                <a href="">H3</a>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2"
+              >
+                <a href="">H4</a>
+              </div>
+            </div>
+            <div class="flex gap-6 mt-10 mb-10">
+              <div class="mt-3">
+                <h2>I</h2>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2"
+              >
+                <a href="">I1</a>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2"
+              >
+                <a href="">I2</a>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2 ml-14"
+              >
+                <a href="">I3</a>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2"
+              >
+                <a href="">I4</a>
+              </div>
+            </div>
+            <div class="flex gap-6 mt-10 mb-10">
+              <div class="mt-3">
+                <h2>J</h2>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2"
+              >
+                <a href="">J1</a>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2"
+              >
+                <a href="">J2</a>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2 ml-14"
+              >
+                <a href="">J3</a>
+              </div>
+              <div
+                class="bg-[#F7F8F8] w-20 h-12 rounded-2xl text-center items-center pt-2"
+              >
+                <a href="">J4</a>
               </div>
             </div>
           </div>
-      </div>
+          <div class="w-96 space-y-24">
+            <div class="overflow-x-auto">
+              <table class="table">
+                <!-- head -->
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Seat <span>2</span></th>
+                    <div id="seat-container"></div>
+                    <th>Class</th>
+                    <div id="class-container"></div>
+                    <th>Price</th>
+                    <th><div id="price-container"></div></th>
+                  </tr><tr>
+                    <th></th>
+                    
+                    <th><div id="seat-container"></div></th>
+                    
+                    <th><div id="class-container"></div></th>
+                    
+                    <th><div id="price-container"></div></th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+            <div class="overflow-x-auto">
+              <table class="table">
+                <!-- head -->
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Total Price</th>
+
+                    <th>BDT 1100</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+            <div class="overflow-x-auto">
+              <table class="table">
+                <!-- head -->
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Grand Total</th>
+
+                    <th>BDT 2000</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+            <div class="space-y-5">
+              <p>Passenger Name*</p>
+              <label class="input input-bordered flex items-center gap-2">
+                <input type="text" class="grow" placeholder="Enter your name" />
+              </label>
+              <p>Phone Number*</p>
+              <label class="input input-bordered flex items-center gap-2">
+                <input
+                  type="text"
+                  class="grow"
+                  placeholder="Enter your phone number"
+                />
+              </label>
+              <p>Email ID</p>
+              <label class="input input-bordered flex items-center gap-2">
+                <input
+                  type="text"
+                  class="grow"
+                  placeholder="Enter your email id"
+                />
+              </label>
+              <button class="btn bg-[#1DD100] w-96">Next</button>
+
+              <div class="flex justify-between">
+                <p><u>Terms and Conditions</u></p>
+                <p><u>Cancellation Policy</u></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+
+    <footer class="footer p-10 bg-white text-black  text-base-content">
+      <nav>
+        <h6 class="footer-title">Services</h6>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav>
+
+      <nav>
+        <h6 class="footer-title">Social</h6>
+        <div class="grid grid-flow-col gap-4">
+          <a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+              ></path></svg
+          ></a>
+          <a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current">
+            
+              <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+              ></path></svg>
+          </svg>
+          <a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+              ></path></svg>
+          </a>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
